@@ -1,0 +1,13 @@
+<h1>保存しました！</h1>
+
+<h3>DB情報</h3>
+<% @cart_info.each do |cart| %>
+	<p>カートID：<%= cart.id %></p>
+	<p>アイテム価格：<%= cart.item_price %></p>
+	-----------------------------------
+<% end %>
+
+<%= link_to "DB情報削除", "/db_destroy" %>
+<%= link_to "TOPへ", root_path %>
+
+<p>DBに保存された情報を確認しよう</p>

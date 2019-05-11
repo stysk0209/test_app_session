@@ -1,0 +1,14 @@
+<h1>Session情報</h1>
+<h3><%= session[:carts] %></h3>
+
+<p>↑↑sessionへ保存された情報です↑↑</p>
+
+<p>初めて保存した時と2回目に保存したときとの値の変化を見てみよう</p>
+
+<p>↓確認出来たら、DBへ保存！</p>
+
+<%= link_to "Session情報を保存する","/create" %>
+<%= link_to "Session情報を削除","/destroy" %>
+<%= link_to "TOPへ", root_path %>
+
+
